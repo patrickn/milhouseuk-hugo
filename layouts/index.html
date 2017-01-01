@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">Welcome</div>
+            <ul>
+            Software Development and Consultancy services based in Bristol, UK.
+            <br>
+            Unix, Linux, iOS and OS X and embedded development.
+            <!--
+            {{ range .Data.Pages.ByPublishDate }}
+                {{ if eq .Section "home" }}
+                    {{ partial "li.html" . }}
+                {{ end }}
+            {{ end }}
+            -->
+            </ul>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
+
