@@ -11,22 +11,24 @@ author = "Patrick Neave"
 pygmentsuseclasses = true
 disqusshortname = ""
 pluralizelisttitles = false
+enableRobotsTXT = false
 
 [permalinks]
-fixed = ":title/"
-home = "home/:slug/"
+  fixed = ":title/"
+  home = "home/:slug/"
 
 [params]
-author = "Patrick"
-cachebuster = true
-dateform = "Jan 2, 2006"
-dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description = "Milhouse Ltd."
-logofile = "img/logo.png"
-faviconfile = "img/favicon.ico"
-highlightjs = true
-lang = "en"
+  author = "Patrick"
+  cachebuster = true
+  dateform = "Jan 2, 2006"
+  dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+  description = "Milhouse Ltd."
+  logofile = "img/logo.png"
+  faviconfile = "img/favicon.ico"
+  highlightjs = true
+  lang = "en"
 
-github = "https://github.com/MilhouseLtd"
-email = "hello@milhouse.uk"
-twitter = "https://twitter.com/milhouseltd"
+  github = "https://github.com/MilhouseLtd"
+  email = "hello@milhouse.uk"
+  twitter = "https://twitter.com/milhouseltd"
+  humans = "/humans.txt"

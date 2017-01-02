@@ -59,6 +59,12 @@
                 <i class="icon ion-social-rss larger"></i>
             </a>
         {{ end }}
+
+        {{ if .Site.Params.humans }}
+            <p><a href="{{ .Site.Params.humans }}" target="_blank">
+               <img src="/img/humanstxt-isolated-blank.gif" \>
+            </a></p>
+        {{ end }}
         </div>
     </div>
 </section>
