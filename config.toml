@@ -31,4 +31,4 @@ enableRobotsTXT = false
   github = "https://github.com/MilhouseLtd"
   email = "hello@milhouse.uk"
   twitter = "https://twitter.com/milhouseltd"
-  humans = "/humans.txt"
+  humans = "humans.txt"

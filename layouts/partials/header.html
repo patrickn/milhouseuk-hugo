@@ -54,16 +54,18 @@
             </a>
         {{ end }}
 
+<!--
         {{ if .Site.RSSLink }}
             <a href="{{ .Site.RSSLink }}">
                 <i class="icon ion-social-rss larger"></i>
             </a>
         {{ end }}
+ -->
 
         {{ if .Site.Params.humans }}
-            <p><a href="{{ .Site.Params.humans }}" target="_blank">
-               <img src="/img/humanstxt-isolated-blank.gif" \>
-            </a></p>
+            <a href="{{ .Site.Params.humans }}" target="_blank">
+                <i class="icon ion-ios-people larger"></i>
+            </a>
         {{ end }}
         </div>
     </div>
