@@ -12,6 +12,7 @@ pygmentsuseclasses = true
 disqusshortname = ""
 pluralizelisttitles = false
 enableRobotsTXT = false
+googleAnalytics = "UA-87135551-3"
 
 [permalinks]
   fixed = ":title/"
@@ -30,5 +31,5 @@ enableRobotsTXT = false
 
   github = "https://github.com/MilhouseLtd"
   email = "hello@milhouse.uk"
-  twitter = "https://twitter.com/milhouseltd"
+  twitter = "https://twitter.com/MilhouseLtd"
   humans = "humans.txt"
