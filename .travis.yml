@@ -1,6 +1,6 @@
 language: go
 go:
-  - 1.4
+  - 1.8.x
 sudo: required
 install:
   - go get github.com/spf13/hugo
