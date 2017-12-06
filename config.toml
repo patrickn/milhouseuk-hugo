@@ -4,6 +4,7 @@ theme = "minimal"
 languageCode = "en-GB"
 disqusshortname = ""
 googleAnalytics = "UA-87135551-3"
+enableRobotsTXT = true
 
 [params]
     author = "Milhouse Ltd."
