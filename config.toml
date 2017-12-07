@@ -16,7 +16,7 @@ enableRobotsTXT = true
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["C++", "C", "go", "scala", "swift"]
+    highlightLanguages = ["cpp", "go", "swift"]    # Check these exist at github.com/isagalaev/highlight.js/tree/master/src/languages
     ProfilePicture = "/img/milhouse-logo-1200x485.png"
     faviconfile = "img/favicon.ico"
 
