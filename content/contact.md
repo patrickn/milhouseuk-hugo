@@ -1,7 +1,8 @@
 ---
 title: Contact
 type: page
-layout: contact
+layout: static
+js: ["openpgp.min", "encrypt"]
 ---
 
 Email: [pneave@milhouse.uk](mailto:pneave@milhouse.uk)

@@ -11,5 +11,17 @@
 
 </main>
 
+<!--
+  To load custom javascript on this page, place the file in /static/js and
+  add to the frontmatter like so:
+
+  ---
+  js: ["file1", "file2"]
+  ---
+ -->
+{{- range .Params.js }}
+    <script src="/js/{{ . }}.js" type="text/javascript"></script>
+{{- end }}
+
 {{ partial "footer" . }}
 

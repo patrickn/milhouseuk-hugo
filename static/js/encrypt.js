@@ -1,7 +1,8 @@
-{{ partial "header" . }}
-
-<script src="/js/openpgp.min.js" type="text/javascript"></script>
-<script type="text/javascript">
+/**
+ * Uses OpenPGP js to encrypt the contents of a form with my public key.
+ * See: http://openpgpjs.org
+ * ToDo: Add signature to encrypted message.
+ */
 function encrypt() {
   if (window.crypto.getRandomValues) {
     if ($('#button').html() === "Encrypt") {
@@ -72,19 +73,3 @@ function encrypt() {
     return false;
   }
 }
-</script>
-
-<main>
-
-    <div class="static">
-		  <img alt="Milhouse Software Development" src="/img/logo-57x57.png">
-
-      <h3>{{ .Title }}</h3>
-
-      {{ .Content }}
-
-    </div>
-
-</main>
-
-{{ partial "footer" . }}
