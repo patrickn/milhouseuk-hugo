@@ -1,0 +1,90 @@
+{{ partial "header" . }}
+
+<script src="/js/openpgp.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function encrypt() {
+  if (window.crypto.getRandomValues) {
+    if ($('#button').html() === "Encrypt") {
+      var pubkey = "-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
+                   "\n" +
+                   "mQINBFi+keABEADpnOlwdIeh4k9MBGJJtjgFzJqxmDS0BJdpF2tFTh3vld7vXZwtkT7/7IPU\n" +
+                   "jeg+DdnVoFswZmtHL3/KcLNa7/s+LUP1qmeyvtXNN5us39g/FanETxPseSAtLFsXEehi6GSV\n" +
+                   "zbKJthQ0w2J30bBydwXIfMgQQP/fJS2kJMW7CcXGi2lmhEvhHzGUitikeYbwOoK8KPR0u9Ql\n" +
+                   "SgJhdPMaWf+jSieoD2F05H9lwTFocj2diYYy9lDs/HTEaGoerL67lQQHArR14EHyFszHxWAx\n" +
+                   "vnVuYynUIAMDDi4fundAdL62Cii9DePzUxOllhFtZoGwv/bWJ+e3t7xnQTeNWTSalgezrWc9\n" +
+                   "ahhHqvtyNATKB91EzPGBR5cQ3tHTnVXpSNx3XCUwkGwR2vNUE+BCqLjufkYrqL/uvqTBKGOM\n" +
+                   "XEh8QpCn/CmsMy87E8EeaS3XZ5tUQRFEAzWto0CgznERjZBYto2uM3q2H8ikGOjUhGn0hAun\n" +
+                   "c80PraeM+1/eRcmzdR8707TR0PUCAP3kprpj7uJzlfxW7rR0Y0Do5UkcIndPSnkiHX+anDNu\n" +
+                   "3gEbuXO4unxDFbAG0s7Tcejeq0ZAYlKOnqBI+8PvZuEwChd5RWYHCcfrEgFnaQp9z1QlVWIK\n" +
+                   "HjPvfG65m4JEy8IVuLXorZ/7fQ6Djy3GBYFXLpPooRe3W30YOQARAQABtCJQYXRyaWNrIE5l\n" +
+                   "YXZlIDxwbmVhdmVAbWlsaG91c2UudWs+iQI7BBABCAAvBQJYvpHmBQkB4TOABgsJCAcDAgkQ\n" +
+                   "d8t0PZ6pCDoEFQgCCgMWAgECGQECGwMCHgEAAHWZD/9kYDw5osPcxj7FwPWQfjLfQlbL7+Rd\n" +
+                   "cB0v8z1iy9aUDX4hQrQMOyhWuzwC6OxQ2MFlGinkUDAjZ1s5cwKv7DKb3OlWaVoOeFuEVSEI\n" +
+                   "jwvuLdTz4K41ySjEoTQpAA+FdpPkJntNpCeO/sNSx7fMmKMF7ausI6f8Nz459Wwz0FZa5lAQ\n" +
+                   "6JR3/MiVonkjJt0fMuk5enQo4lKaYGm+akKiXIrnbscD0EhLBg8nCvRY4qzt0rl5f2QMsqxL\n" +
+                   "EJk6ymvy8cXf6mgzSlTJVI6bbrXqqiULrilTvYdK8zOWwTnt6Eu6EX4HKS/L8AkoJZJ8JBba\n" +
+                   "a+ySf8fGB91y+ja7198kvSgS/Tz2RE5nwqyssuQF+k00yFBdE31HiUNP8kOwJtRsSl7dFH3w\n" +
+                   "Qt4UIM34KdjqWW0mrEBgSJ4RoBZsNJWeJbGtMN1oFW8qFDqUVIX7PFlr/D8T5lr13xPrHWdj\n" +
+                   "bNb1OV068oK0BN2K0gydaBhuV+ICv7jr7Iae6ft0W9QbPTS5+VzAELfUnkl5GtZCKKdUS/qi\n" +
+                   "aGrkBZqw11gZu0Ygbbkz0HULAlL45bIUjbqwxubOjalWbT5dYuinABP9orFTsgmAXKbarvuP\n" +
+                   "vKip5iIH8ehSf92hBfi5UhV4ycOybcWdojibfbORdWUzKXth5U0qk6AgGRnmEa0mC6g8+AcW\n" +
+                   "H4YcKbkCDQRYvpHgARAAvhyGV66Lvnw/hlhMDzpL9UqYnNfk/L09sQkf3IqOx/lxzTfolUzC\n" +
+                   "tCbIZzR/xftQ4IOhYS1OaeqAusz4t8mThGS2NFxy+WyOX0aIp/ohTiHAZmFIn3YZFm3YXm8A\n" +
+                   "2iWB4WdeH/hZQCLi1+pTdcUipsoVhR/rWkV9xXVvDaLFT/hwHeSPCcTeNUiEh7DrJpk+tp4b\n" +
+                   "EeJ1/kqJvFbNW6GlvPWgVrm4IBTHZbwGrwiPbrjKtFk+Mi42IlmIotv+vloP4LWy3J3aKxfL\n" +
+                   "G+2+uaQxR+i/sah8VRjqyfs0x1x6mN7HhT2+dxzbmfD17Nw7f68/Qps7nol6KjTzDYWDBvAg\n" +
+                   "G/88r1l479/9At36ujLiw4iav3PQ8cPyruq83YtZwrkPiWc+OxMDaP8bnLmhAJVhKz7DDotI\n" +
+                   "M4kUVs7ASf2qKn5H7485uRnq4Pjvi4awt+lhMw+KGlisM2c7p/t/412k8NXhs9hqvj7jYbt7\n" +
+                   "i5+3euBmw3oY2QdtavqZu1vsUdy+HcIOlegHi+XrayVWPyLs3geybmPsN5F2y5xBLA93bntu\n" +
+                   "IR79ph8ofCpzpa5GvqW/8o4IU+u4/ebYjybUb7fH3Fxxw6xptMJ07V3+g7oT3EbJ96XbHtgV\n" +
+                   "+3i8m5OuDJQWib/8eS8u/x1GgWREMY2JZ/YkASsB6TC8hdgst1IyHzsAEQEAAYkCJQQYAQgA\n" +
+                   "GQUCWL6R6AUJAeEzgAkQd8t0PZ6pCDoCGwwAAG75D/4njmR/UeQtUqCB4h8uJfJJFaHgubwr\n" +
+                   "wVC1LqCn+8uMmrgXTBTUrgIr/sYMCzAeGEmBthrsnDS1eSfbEjTHOKgObCoDRTVGmz0PyGHL\n" +
+                   "AzSln8aOT/pyhBJFALIxF9foNZN7RwdPqZkM9m/NYymoODF7Am9cmPv0EqU9Cm/wYCqoV2Ng\n" +
+                   "vFVMohNgOWk7fFQ+4Qo9LYjwyM81u2MW85XUqJU8PTL+O1EQCDcSEqy9K5ww40jWb/6oJgtC\n" +
+                   "P9IAvtPykFy7pCdmDySm4Kt0iykXBZLVm+faNikWVGXA8zA7rVAxlVbla/HaUI08X+fq8Fp1\n" +
+                   "PUQjapRiiYPcYzn1L0CV5OWMXtehiLdz805Z4ycXlank6fFwmL5RHsNk3o1bgv7yoTKr14O9\n" +
+                   "dwJD/79pmU5UIUbSYvaNVUrtB5rWkPGTK4Ib4bd2nGqGsbIWx7dQZySR8dBtyVsmjcDaKWf6\n" +
+                   "hgFzbsDIk3LJfHYp4HRV5ZaNgGaLJ404XmRbNe3+1x1PhqL7Y3gqnhTJwjdfM/thFYx4UJwX\n" +
+                   "fOwNwtqrU8FeoJ4/I6U27e0ZNG9u5/+o4tvYy8hqW2T4K6FgdStJA285R4P1H7nizql1ciyw\n" +
+                   "FFs8QNTcl57HaTAVfDS/TL7rqHMyVPQk+tH3E51LMARiJMoY7Kcl5644S65Qz6AGm05o1crw\n" +
+                   "K+OUAg==\n" +
+                   "=pNUp\n" +
+                   "-----END PGP PUBLIC KEY BLOCK-----";
+
+      var options = {
+        data: $('#input').val(),                           // input as String (or Uint8Array)
+        publicKeys: openpgp.key.readArmored(pubkey).keys,  // for encryption
+      };
+      openpgp.encrypt(options).then(function(ciphertext) {
+        $('#input').val(ciphertext.data);
+      });
+
+      $('#button').html("Clear");
+      return true;
+    } else {
+      $('#input').val("");
+      $('#button').html("Encrypt");
+    }
+  } else {
+    $("#button").val("Error");
+    window.alert("This browser isn't supported!");
+    return false;
+  }
+}
+</script>
+
+<main>
+
+    <div class="static">
+		  <img alt="Milhouse Software Development" src="/img/logo-57x57.png">
+
+      <h3>{{ .Title }}</h3>
+
+      {{ .Content }}
+
+    </div>
+
+</main>
+
+{{ partial "footer" . }}

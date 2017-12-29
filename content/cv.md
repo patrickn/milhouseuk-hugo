@@ -1,8 +1,7 @@
 ---
-title: "CV"
-date: 2017-12-06
+title: Curriculum vitae
 type: page
-layout: "static"
+layout: static
 ---
 
 Download my current CV in [Word](/cv/cv-of-patrick-neave.doc) or [PDF](/cv/cv-of-patrick-neave.pdf) formats.

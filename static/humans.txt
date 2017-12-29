@@ -5,7 +5,7 @@ Twitter: @neavey
 From: Bristol, UK
 
 /* SITE */
-Last update: 2017/12/07
+Last update: 2017/12/29
 Standards: HTML5, CSS3
 Components: Hugo (gohugo.io), Minimal Theme
 Software: BBEdit

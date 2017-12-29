@@ -92,3 +92,16 @@ footer {
 img {
     max-width: 100%;
 }
+
+/*static pages */
+.static {
+  text-align: left;
+}
+
+.static img {
+  float: right;
+}
+
+.static h3 {
+  padding-bottom: 30px;
+}
