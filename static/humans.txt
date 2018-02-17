@@ -1,27 +1,27 @@
-/* TEAM */
-Me: Patrick
-Contact: hello [at] neavey.net
-Twitter: @neavey
-From: Bristol, UK
-
-/* SITE */
-Last update: 2017/12/29
-Standards: HTML5, CSS3
-Components: Hugo (gohugo.io), Minimal Theme
-Software: BBEdit
-
- ,.-~-.,_,.-~-.,_,.-~-.,_,.-~-.,_,.-~-.,_,.-~-.,_,.-~-.,
-~                                                       ~
-                                    |~~~~|
-                                    |    |
-                                    |    |       __
-                                   @--OO--@    /'  `\
-                                    |  D |    /\-OO-/\
-                                    |    |   |_| *  |_|
-                                    /\__/\     \____/
-                                   /--\/--\     ||||
-                                  / _ ||   \    (|(|
-                                    \\//
-                                     ~~
-
-
+ _____________________________________________
+/                                             \
+| It looks like you want to create a great    |
+| looking website, contact:                   |
+|                                             |
+| /* TEAM */                                  |
+| Me: Patrick                                 |
+| Contact: patrick [at] milhouse.uk           |
+| Twitter: @neavey                            |
+| From: Bristol, UK                           |
+|                                             |
+| /* SITE */                                  |
+| Standards: HTML5, CSS3                      |
+| Components: Hugo (gohugo.io), Minimal Theme |
+\                                             /
+ ---------------------------------------------
+  \
+   \
+     __
+    /  \
+    |  |
+    @  @
+    |  |
+    || |/
+    || ||
+    |\_/|
+    \___/
