@@ -20,4 +20,4 @@ PGP Key: [Download](/pgp/key.asc)
 
 Download my public key to encrypt anything you send.
 
-Fingerprint: `03A3 1A7E B408 7393 2229 BBAC 77CB 743D 9EA9 083A`
+Fingerprint: `1287 BF99 E7D4 D9BD D683 673A 49E4 76C5 A410 F6A1`
