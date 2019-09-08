@@ -3,7 +3,7 @@ baseurl = "https://www.milhouse.uk/"
 theme = "minimal"
 languageCode = "en-GB"
 disqusshortname = ""
-googleAnalytics = "UA-87135551-3"
+# googleAnalytics = "UA-87135551-3"
 enableRobotsTXT = true
 
 [params]
