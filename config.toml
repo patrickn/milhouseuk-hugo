@@ -8,7 +8,7 @@ enableRobotsTXT = true
 
 [params]
    author = "Milhouse Ltd."
-   description = "Software Development and Consultancy services based in Bristol, UK. Unix, Linux, iOS and macOS and embedded development."
+   description = "Software Development and Consultancy services based in Bristol, UK. Unix, Linux, iOS, macOS and embedded development."
    githubUsername = "MilhouseLtd"
    accent = "red"
    showBorder = true
