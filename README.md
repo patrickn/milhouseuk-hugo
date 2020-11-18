@@ -1,8 +1,7 @@
 # milhouse.uk
 
-![](https://travis-ci.org/patrickn/milhouseuk-hugo.svg?branch=master)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b447b344-7b75-4d25-bcae-9e9ef43b9f38/deploy-status)](https://app.netlify.com/sites/milhouseuk/deploys)
 
-This site has been generated with [Hugo](https://gohugo.io) using the [Minimal theme](https://github.com/calintat/minimal), and stored publicly here on Github. Updates are done on the go using a Git client, changes are then uploaded to Github where a [Travis CI](https://travis-ci.org/) job generates the site and deploys to Amazon S3.
 
-The S3 site is behind Amazons CloudFront CDN.
+This site has been generated with [Hugo](https://gohugo.io) using the [Minimal theme](https://github.com/calintat/minimal), and stored publicly here on Github. Changes are uploaded to Github and detected by [Netlify](https://www.netlify.com/) to trigger automatic deploys.
 
