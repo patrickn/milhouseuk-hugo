@@ -4,4 +4,5 @@
 ##
 public/
 static/cv/
-
+.hugo_build.lock
+resources/
